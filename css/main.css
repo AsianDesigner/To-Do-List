@@ -54,6 +54,15 @@ article:first-of-type {
     border: 4px solid gray;
 }
 
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "👍";
+    display: inline-block;
+}
+
 #inprogress {
     border: 4px solid purple;
 }
