@@ -61,6 +61,23 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + span::after {
     content: "👍";
     display: inline-block;
+    animation-name: spin;
+    animation-duration: 300ms;
+    animation-iteration-count: initial;
+    animation-timing-function: linear; 
+    transform: rotate(3deg);
+    transform: rotate(0.3rad);
+    transform: rotate(3grad); 
+    transform: rotate(.03turn);
+}
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
 }
 
 #inprogress {
