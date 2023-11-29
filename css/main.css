@@ -1,0 +1,85 @@
+/* resetting everything */
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/lbj_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    font-size: 17;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header > h1{
+    text-align: center;
+    padding: 8px;
+}
+
+article {
+    width: 400px;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin: 10px 12px;
+    text-align: left;
+}
+
+article > h2 {
+    color: gray;
+    padding: 4px 8px;
+}
+
+article:first-of-type {
+    border: 4px solid gray;
+}
+
+#inprogress {
+    border: 4px solid purple;
+}
+
+#inprogress h2 {
+    color:purple;
+}
+
+#done {
+    border-color: gold;
+}
+
+#done h2 {
+    color: gold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 6px 8px;
+}
+
+.progress li:nth-child(odd) {
+    background-color: rgba(160, 32, 240, 0.5);
+}
+
+.do li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fin li:nth-child(odd) {
+    background-color: rgba(255, 215, 0, 0.5);
+}
