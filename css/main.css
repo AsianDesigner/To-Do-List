@@ -12,7 +12,7 @@ body {
     background-color: black;
     font-size: 17;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
 }
 
 h1 {
@@ -29,6 +29,12 @@ main {
 header > h1{
     text-align: center;
     padding: 8px;
+}
+
+header > h2 {
+    color: red;
+    font-size: 14px;
+    text-align: center;
 }
 
 article {
@@ -76,10 +82,22 @@ ul li {
     background-color: rgba(160, 32, 240, 0.5);
 }
 
+.progress li:nth-child(even) {
+    background-color: rgba(160, 32, 240, 0.7);
+}
+
 .do li:nth-child(odd) {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.do li:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 .fin li:nth-child(odd) {
     background-color: rgba(255, 215, 0, 0.5);
+}
+
+.fin li:nth-child(even) {
+    background-color: rgba(255, 215, 0, 0.7);
 }
